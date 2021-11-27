@@ -1,0 +1,12 @@
+.form_field {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    height: 100px;
+    background-color: rgb(31, 70, 70);
+    color: aqua;
+    align-content: center;
+    text-align: center;
+}
