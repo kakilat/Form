@@ -1,12 +1,42 @@
 .form_field {
     display: flex;
-    flex-direction: column;
+    width: auto;
+    align-items: flex-end;
+    align-self: center;
+    align-content: stretch;
 }
 
-.title {
-    height: 100px;
-    background-color: rgb(31, 70, 70);
-    color: aqua;
+#left {
+    flex: content;
+    padding: 20;
     align-content: center;
+    margin-left: 80px;
+}
+
+#right {
+    flex: content;
+    padding: 20;
+    align-content: center;
+    margin-left: 80px;
+    margin-bottom: 160px;
+}
+
+#title {
+    height: 50px;
+    background-color: rgb(31, 70, 70);
+    align-content: center;
+}
+
+#workshop {
     text-align: center;
+}
+
+#seat_title {
+    font-weight: 100;
+    text-align: center;
+}
+
+input {
+    align-self: flex-end;
+    flex-direction: column;
 }

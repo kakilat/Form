@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>workshop registration</title>
+
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -15,43 +16,46 @@
     <h4 id="seat_title">
         registrer now while seats are available!
     </h4>
-    <form action="submit">
-        <label for="user name">First Name * </label>
-        <input type="text" name="fname" id="fname" required> <br/> <br>
-        <label for="last_name">Last Name * </label>
-        <input type="text" name="lname" id="lname" required> <br/> <br>
-        <label for="Company institution * ">Company/ Institution </label>
-        <input type="text" name="fname" id="fname" required> <br/><br>
-        <label for="Address *"> Address </label>
-        <textarea name="address" id="address" cols="30" rows="10" required></textarea> <br>
-        <br>
-        <label for="city">City </label>
-        <input type="text" name="city " id="city"> <br><br>
-        <label for="state "> State/ Province/ Region </label>
-        <select name="state" id="state">
+    <form class="form_field" action="submit">
+        <div id="left">
+            <label for="user name">First Name * </label>
+            <input type="text" name="fname" id="fname" required> <br/> <br>
+            <label for="last_name">Last Name * </label>
+            <input type="text" name="lname" id="lname" required> <br/> <br>
+            <label for="Company institution * ">Company/ Institution </label>
+            <input type="text" name="fname" id="fname" required> <br/><br>
+            <label for="Address *"> Address </label>
+            <textarea name="address" id="address" cols="30" rows="10" required></textarea> <br>
+            <br>
+            <label for="city">City </label>
+            <input type="text" name="city " id="city"> <br><br>
+            <label for="state "> State/ Province/ Region </label>
+            <select name="state" id="state">
           <option value="Select" >  -select-   </option>
           <option value="iowa">Iowa</option>
         <option value="navada">Navada</option>
         <option value="michigan">Michigan</option>
         <option value="arizona"> Arizona</option>
           </select><br><br>
-        <label for="Country"> Country</label>
+            <label for="Country"> Country</label>
 
-        <select name="county" id="country">
+            <select name="county" id="country">
               <option value="select"> -select-</option>
             <option value="ethiopia">Ethiopia</option>
             <option value="Canada">Canada</option>
             <option value="france">France</option>
             <option value="italy">Italy</option>
             </select><br> <br>
-        <label for="email">Email</label>
-        <input type="text" id="emial" name="email" required> <br><br>
-        <label for="phone">Phone Number</label>
-        <input type="text" id="phone" name="phone">
-        <br><br>
-        <h5 id="lunch">Lunch</h5>
-        <label for="meal">Meal Preference </label>
-        <select name="meal" id="meal">
+            <label for="email">Email</label>
+            <input type="text" id="emial" name="email" required> <br><br>
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone">
+            <br><br>
+        </div>
+        <div id="right">
+            <h5 id="lunch">Lunch</h5>
+            <label for="meal">Meal Preference </label>
+            <select name="meal" id="meal">
          <option value="vegi">Vegetarian</option>
          <option value="diabetic">Diabetic</option>
          <option value="vegan">Vegan</option>
@@ -59,25 +63,27 @@
          <option value="healthy">Healthy</option>
        </select> <br><br>
 
-        <h5 id="payment">Payment Details</h5>
-        <label for="payment mode"> Payment Mode </label>
-        <input type="checkbox" id="cash" name="cash">
-        <label for="cash"> Cash</label><br>
-        <input type="checkbox" id="cheque" name="cheque">
-        <label for="cheque">Cheque</label><br>
-        <input type="checkbox" id="demand" name="demand">
+            <h5 id="payment">Payment Details</h5>
+            <label for="payment mode"> Payment Mode </label><br>
+            <input type="checkbox" id="cash" name="cash">
+            <label for="cash"> Cash</label>
+            <input type="checkbox" id="cheque" name="cheque">
+            <label for="cheque">Cheque</label>
+            <input type="checkbox" id="demand" name="demand">
 
-        <label for="demnd draft">Demand Draft</label>
-        <br>
-        <br>
-        <label for="cheque no">DD/Cheque Number.</label>
-        <input type="text" id="chequeno" name="cheque_no"><br><br>
-        <label for="drawn">Drawn on (Bank Name)</label>
-        <input type="text" id="drawn" name="drwan"><br><br>
+            <label for="demnd draft">Demand Draft</label>
+            <br>
+            <br>
+            <label for="cheque no">DD/Cheque Number.</label>
+            <input type="text" id="chequeno" name="cheque_no"><br><br>
+            <label for="drawn">Drawn on (Bank Name)</label>
+            <input type="text" id="drawn" name="drwan"><br><br>
 
-        <label for="payable">Payable At</label>
-        <input type="text" id="payable_at" name="payable_at"><br><br>
+            <label for="payable">Payable At</label>
+            <input type="text" id="payable_at" name="payable_at"><br><br>
 
+
+        </div>
         <input type="submit" name="submit" id="submit">
         <input type="reset" name="reset" id="reset">
 
